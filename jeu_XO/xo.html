@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="xo.css">
+    <title>Document</title>
+</head>
+<body>
+       <div class="game">
+           <div class="title"><span>X O </span>GAME</div>
+            <div class="carer" id="item1" onclick="game(this.id)"></div>
+        <div class="carer" id="item2" onclick="game(this.id)"></div>
+        <div class="carer" id="item3" onclick="game(this.id)"></div>
+
+        <div class="carer" id="item4" onclick="game(this.id)"></div>
+        <div class="carer" id="item5" onclick="game(this.id)"></div>
+        <div class="carer" id="item6" onclick="game(this.id)"></div>
+
+        <div class="carer" id="item7" onclick="game(this.id)"></div>
+        <div class="carer" id="item8" onclick="game(this.id)"></div>
+        <div class="carer" id="item9" onclick="game(this.id)"></div>
+       </div>
+        <script>
+            let arry = [];
+              let co=0;
+            function ganer(){
+                //{}
+                for(let i=1;i<10;   i++){ 
+                    arry[i]=document.getElementById('item'+i).innerHTML;/* saheb el 9ima min div w wad3iha fi arry */ 
+
+                    
+                }
+                for(let i=1;i<10;   i++){ 
+                    if(arry[i]=='x' || arry[i]=='o'){
+                        co+=1
+                    }
+                    // console.log(i,co)
+                     if (i==9 && co!=9){
+                        co=0
+                     }
+                }
+
+                if(arry[1]==arry[2] && arry[2]==arry[3] && arry[2]!='')
+                    {
+                        title.style.backgroundColor="yellow";
+                        title.style.color="red";
+                        title.innerHTML=('le ganner est :'+arry[2]); 
+                        setInterval(function(){
+                            title.innerHTML+='.'/* ta9ome bi tecraer el ne9ate ...*/
+                        },1000);/*1sconed*/
+                        setTimeout(function(){/*relode e3adet el lo3ba*/
+                            location.reload();/*e3adet el lo3baa*/
+                        },4000)/* 4 sconnde*/
+                    }
+                else if(arry[4]==arry[5] && arry[5]==arry[6] && arry[5]!='')
+                    {
+                        title.style.backgroundColor="yellow";
+                        title.style.color="red";
+                        title.innerHTML=('le ganner est : '+arry[5]);
+                        setInterval(function(){
+                            title.innerHTML+='.'/* ta9ome bi tecraer el ne9ate ...*/
+                        },1000);/*1sconed*/
+                        setTimeout(function(){/*relode e3adet el lo3ba*/
+                            location.reload();/*e3adet el lo3baa*/
+                        },4000)/* 4 sconnde*/
+                    }
+                else if(arry[7]==arry[8] && arry[8]==arry[9] && arry[7]!='')
+                    {
+                        title.style.backgroundColor="yellow";
+                        title.style.color="red";
+                        title.innerHTML=('le ganner est : '+arry[8]);
+                        setInterval(function(){
+                            title.innerHTML+='.'/* ta9ome bi tecraer el ne9ate ...*/
+                        },1000);/*1sconed*/
+                        setTimeout(function(){/*relode e3adet el lo3ba*/
+                            location.reload();/*e3adet el lo3baa*/
+                        },4000)/* 4 sconnde*/
+                    }
+                else if(arry[1]==arry[4] && arry[4]==arry[7] && arry[1]!='')
+                    {
+                        title.style.backgroundColor="yellow";
+                        title.style.color="red";
+                        title.innerHTML=('le ganner est : '+arry[1]);
+                        setInterval(function(){
+                            title.innerHTML+='.'/* ta9ome bi tecraer el ne9ate ...*/
+                        },1000);/*1sconed*/
+                        setTimeout(function(){/*relode e3adet el lo3ba*/
+                            location.reload();/*e3adet el lo3baa*/
+                        },4000)/* 4 sconnde*/
+                    }
+                else if(arry[2]==arry[5] && arry[5]==arry[8] && arry[5]!='')
+                    {
+                        title.style.backgroundColor="yellow";
+                        title.style.color="red";
+                        title.innerHTML=('le ganner est : '+arry[5]);
+                        setInterval(function(){
+                            title.innerHTML+='.'/* ta9ome bi tecraer el ne9ate ...*/
+                        },1000);/*1sconed*/
+                        setTimeout(function(){/*relode e3adet el lo3ba*/
+                            location.reload();/*e3adet el lo3baa*/
+                        },4000)/* 4 sconnde*/
+                    }
+                else if(arry[3]==arry[6] && arry[6]==arry[9] && arry[6]!='')
+                    {
+                        title.style.backgroundColor="yellow";
+                        title.style.color="red";
+                        title.innerHTML=('le ganner est : '+arry[6]);
+                        setInterval(function(){
+                            title.innerHTML+='.'/* ta9ome bi tecraer el ne9ate ...*/
+                        },1000);/*1sconed*/
+                        setTimeout(function(){/*relode e3adet el lo3ba*/
+                            location.reload();/*e3adet el lo3baa*/
+                        },4000)/* 4 sconnde*/
+                    }
+                else if(arry[1]==arry[5] && arry[5]==arry[9] && arry[5]!='')
+                    {
+                        title.style.backgroundColor="yellow";
+                        title.style.color="red";
+                        title.innerHTML=('le ganner est : '+arry[5]);
+                        setInterval(function(){
+                            title.innerHTML+='.'/* ta9ome bi tecraer el ne9ate ...*/
+                        },1000);/*1sconed*/
+                        setTimeout(function(){/*relode e3adet el lo3ba*/
+                            location.reload();/*e3adet el lo3baa*/
+                        },4000)/* 4 sconnde*/
+                    }
+                else if(arry[3]==arry[5] && arry[5]==arry[7] && arry[7]!='')
+                    {
+                        title.style.backgroundColor="yellow";
+                        title.style.color="red";
+                        title.innerHTML=('le ganner est : '+arry[7]);
+                        setInterval(function(){
+                            title.innerHTML+='.'/* ta9ome bi tecraer el ne9ate ...*/
+                        },1000);/*1sconed*/
+                        setTimeout(function(){/*relode e3adet el lo3ba*/
+                            location.reload();/*e3adet el lo3baa*/
+                        },4000)/* 4 sconnde*/
+                    }
+                    else if(co==9){
+                        title.style.backgroundColor="yellow";
+                        title.style.color="red";
+                        title.innerHTML='reload';
+                        setInterval(function(){
+                            title.innerHTML+='.'/* ta9ome bi tecraer el ne9ate ...*/
+                        },1000);/*1sconed*/
+                        setTimeout(function(){/*relode e3adet el lo3ba*/
+                            location.reload();/*e3adet el lo3baa*/
+                        },4000)/* 4 sconnde*/
+                    }
+            }
+        
+             
+        let turn = 'x';
+        let title = document.querySelector(".title");
+
+        function game(id){
+            let element = document.getElementById(id);
+        // while(title.innerHTML==='x||title.innerHTML==='o'){
+            if(turn === 'x'&&element.innerHTML==''){
+                element.innerHTML='x';
+                turn='o';
+                title.innerHTML='o';
+            }
+            else if(turn==='o'&& element.innerHTML==''){
+                element.innerHTML='o';
+                turn='x';
+                title.innerHTML='x';
+            }
+        // }
+        element.style.backgroundColor="black";
+        ganer();
+        }
+       </script>
+</body>
+</html>

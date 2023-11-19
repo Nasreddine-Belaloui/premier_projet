@@ -1,0 +1,37 @@
+.game{
+    background-color: antiquewhite;
+    width: 500px;
+    height: 500px;
+    /* display: grid; */
+    /* position: relative; */
+    text-align:center;
+    font-size: 30px;
+    
+}
+.game .title{
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+}
+.game .title span{
+    color: yellow;
+}
+.game .carer{
+     display:flex;
+     align-items: center;
+    width: 162px;
+    height: 140px;
+    justify-content: center;
+    float: left;
+    background-color: red;
+    /* border: 2px solid; */
+    margin: 2px;
+    font-weight:700;
+    color: white;
+    font-size: 90px;
+    color: y;
+}
+.game .carer:hover{
+    background-color: black;
+    cursor: pointer;
+}
